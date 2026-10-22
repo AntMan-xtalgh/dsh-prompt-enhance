@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Prompt Enhancement",
+    "description": "Rewrite the composer draft into a clearer prompt."
+  },
+  "button": {
+    "label": "Enhance prompt",
+    "empty": "Type something first"
+  }
+}
