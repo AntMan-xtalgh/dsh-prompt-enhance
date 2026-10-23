@@ -31,22 +31,11 @@ Type a half-formed thought, click once, send a well-specified request. No copy-p
 
 ## What it looks like
 
-A sparkle button appears in the composer toolbar:
+![The enhance button in the DSH composer](docs/composer.png)
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  Describe the task, type / for commands, @ for files        │
-│                                                             │
-│  [+] [permissions ▾]           [✨] [model ▾] [↑]          │
-│                                 ↑                           │
-│                          the enhance button                 │
-└─────────────────────────────────────────────────────────────┘
-```
+A sparkle button appears in the composer toolbar — **boxed in red above**, between the permission selector and the model picker.
 
-It registers into `conversation.input.right` — a **list** slot immediately left of the model selector. Being a list slot matters: it can coexist with other composer buttons, and it never competes with the voice-input button that owns the neighbouring single-valued `conversation.input.activity` slot.
-
-> **Screenshot wanted.** Drop one at `docs/screenshot.png` and it will show here:
-> `<img src="docs/screenshot.png" width="720" alt="The enhance button in the DSH composer">`
+It registers into `conversation.input.right`, a **list** slot immediately left of the model selector. Being a list slot matters: it can coexist with other composer buttons, and it never competes with the voice-input button that owns the neighbouring single-valued `conversation.input.activity` slot.
 
 ### Button states
 
@@ -510,6 +499,8 @@ dsh-prompt-enhance/
 ├── locale/
 │   ├── en.json           # English strings
 │   └── zh.json           # 中文字符串
+├── docs/
+│   └── composer.png      # the screenshot above
 ├── README.md
 └── LICENSE
 ```
